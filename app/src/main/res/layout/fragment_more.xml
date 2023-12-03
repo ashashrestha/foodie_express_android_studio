@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MoreFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tvMore"
+        />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/more_recyclerview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvMore"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        tools:listitem="@layout/more_list"-->
+<!--        />-->
+
+
+        <LinearLayout
+            android:id="@+id/morely1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMore"
+
+            >
+            <ImageView
+                android:id="@+id/ivOrder"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_bookmark_border_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orders"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/morely2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morely1"
+
+        >
+        <ImageView
+            android:id="@+id/feedback"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_feedback_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvfeedesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give Your Feedback On Our Service"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMore2"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/morely3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morely2"
+
+        >
+        <ImageView
+            android:id="@+id/ivdelivery"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_delivery_dining_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvdelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charge"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvdeliverydesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery for charge list"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMore2"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/morely4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morely3"
+
+        >
+        <ImageView
+            android:id="@+id/ivbop"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_handshake_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvbop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Be Our Partner"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvbopdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Your Restaurant"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMore2"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/morely5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morely4"
+
+        >
+        <ImageView
+            android:id="@+id/ivabout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_error_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/morely6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morely5"
+
+        >
+        <ImageView
+            android:id="@+id/ivlogout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_logout_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvlogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--
+
+
+<!-    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/baseline_feedback_24"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/icOrder"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/icOrder"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/icFeedback"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Feedback"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:id="@+id/Back"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icFeedback"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/icFeedback"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/icOrder"-->
+<!--       />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Give Your Feedbackon Our Service"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Back"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icFeedback"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/icFeedback"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:textColor="@color/green"/>-->
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/baseline_delivery_dining_24"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/icFeedback"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/icFeedback"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/icDelivery"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Delivery Charge"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/icFeedback"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icDelivery"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/icDelivery"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:id="@+id/Charge"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Delivery Charge List"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Charge"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icFeedback"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/icFeedback"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:textColor="@color/green"/>-->
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:src="@drawable/baseline_handshake_24"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/icDelivery"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/icDelivery"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/icPartner"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Be Our Partner"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/icDelivery"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icPartner"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/icPartner"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:id="@+id/Partner"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="List Your Resturant"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Partner"-->
+<!--        app:layout_constraintStart_toEndOf="@id/icDelivery"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/icDelivery"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:textColor="@color/green"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:src="@drawable/baseline_error_24"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/icPartner"-->
+<!--        app:layout_constraintStart_toStartOf="@id/icPartner"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/About"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="About Us"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/Partner"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/About"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/About"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:textColor="@color/black"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:src="@drawable/baseline_logout_24"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/About"-->
+<!--        app:layout_constraintStart_toStartOf="@id/About"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/Log"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Log Out"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/About"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/Log"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/Log"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:textColor="@color/black"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

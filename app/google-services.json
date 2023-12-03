@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "202512475599",
+    "project_id": "the-foodie-express-e29a3",
+    "storage_bucket": "the-foodie-express-e29a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202512475599:android:6aae23a00dd2e63aaa5eba",
+        "android_client_info": {
+          "package_name": "com.ocem.foodieexpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202512475599-ne6usner2bqjuv647tdt9chujdfo2aof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAqxPcopv-EEtEPIAIWQ9wQ-W-3QkCKLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202512475599-ne6usner2bqjuv647tdt9chujdfo2aof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202512475599:android:82c1b4f45d0b5ef3aa5eba",
+        "android_client_info": {
+          "package_name": "com.ocem.thefoodieexpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202512475599-ne6usner2bqjuv647tdt9chujdfo2aof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAqxPcopv-EEtEPIAIWQ9wQ-W-3QkCKLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202512475599-ne6usner2bqjuv647tdt9chujdfo2aof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".list.Category_list"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:id="@+id/ctlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+  >
+
+    <ImageView
+        android:id="@+id/CLPimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/veg_khajaset" />
+
+    <TextView
+        android:id="@+id/tvCLargeP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="Veg Restaurant"
+        android:layout_marginTop="8dp"
+        android:textColor="#282726"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/CLPimage"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btOrdernow"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:text="Order now"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@+id/CLPimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvCLargeP"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctlayout"
+        android:layout_marginTop="5dp"
+        android:background="#eee"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

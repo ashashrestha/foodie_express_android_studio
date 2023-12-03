@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.EmailVerificationActivity">
+    <ImageView
+        android:id="@+id/leftarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leftarrow" />
+
+    <TextView
+        android:id="@+id/tvVemailcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Verification Code "
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/leftarrow"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/Vicon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVemailcode"
+        app:srcCompat="@drawable/verify" />
+    <TextView
+        android:id="@+id/tvVcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Email Address"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vicon"
+        />
+
+    <LinearLayout
+        android:id="@+id/lyGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVcode"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvVerifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification code sent to"
+            android:textSize="16sp"
+            android:textColor="#80000000"
+            />
+
+        <TextView
+            android:id="@+id/tvGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="abc@gmail.com"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            />
+
+    </LinearLayout>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        style="@style/PinWidget.PinView"
+        android:cursorVisible="true"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemHeight="45dp"
+        app:itemWidth="45dp"
+        app:itemSpacing="10dp"
+        app:itemRadius="5dp"
+        app:lineColor="#575757"
+        app:lineWidth="1dp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:itemBackground="#f9f8f7"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:itemCount="6"
+        app:viewType="rectangle"
+        android:layout_marginHorizontal="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyGmail"
+
+        />
+    <LinearLayout
+        android:id="@+id/linResend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pinview1"
+        android:layout_marginTop="18sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't get a code ?"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textStyle=""
+            android:layout_marginLeft="5sp"
+            android:textSize="14sp"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linResend"
+        android:layout_marginHorizontal="35sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/round_btn"
+        android:text="VERIFY"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

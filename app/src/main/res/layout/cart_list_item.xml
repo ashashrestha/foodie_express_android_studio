@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ctlayout"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:background="#fff"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/ivproduct"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/background_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oreomilkshake" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="Oreo MilkShake"
+            android:layout_marginTop="3dp"
+            android:textColor="#282726"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivproduct"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            android:text="NRS "
+            android:textColor="#282726"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrice"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="100 "
+            android:textColor="#282726"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvRestroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="Mimosa Pizza"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/ivproduct"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+            />
+
+        <TextView
+            android:id="@+id/tvminus"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/minus"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/etQuantity"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:background="#ededed"
+            android:text="1"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/tvplus"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+        <TextView
+            android:id="@+id/tvplus"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/plus"
+            android:text="+"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".list.Category_list"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ctlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginHorizontal="12dp">
+        <ImageView
+            android:id="@+id/RestroLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="2.5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/syanko" />
+
+        <TextView
+            android:id="@+id/tvRestroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Syanko Katti Roll"
+            android:textColor="#282726"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/RestroLogo"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/Addlogo"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/RestroLogo"
+            app:layout_constraintTop_toBottomOf="@id/tvRestroName"
+            android:background="@drawable/address"/>
+
+        <TextView
+            android:id="@+id/tvRestroAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="Shahidchowk-3,Bharatpur,Chitwan"
+            android:textColor="#000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/Addlogo"
+            app:layout_constraintTop_toBottomOf="@+id/tvRestroName"
+            />
+
+        <TextView
+            android:id="@+id/tvDeliveryHrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dp"
+            android:text="Delivery Hours: 10:00 AM to 9:00 PM"
+            android:textColor="#34A853"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/RestroLogo"
+            app:layout_constraintTop_toBottomOf="@+id/tvRestroAdd"
+            />
+
+        <Button
+            android:id="@+id/btOrdernow"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="3dp"
+            android:text="Order now"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            app:layout_constraintStart_toEndOf="@+id/RestroLogo"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryHrs"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ctlayout"
+        android:layout_marginTop="5dp"
+        android:background="#eee"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
